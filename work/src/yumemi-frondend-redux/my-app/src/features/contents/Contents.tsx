@@ -1,11 +1,14 @@
 import React from "react";
 import PrefectureCheckUnit from "./PrefectureCheckUnit";
 
-const Contents = () => {
+const Contents = (props: any) => {
+  const onClickChekbox = props.onClickChekbox;
   return (
     <div>
       <h2>都道府県</h2>
-      <PrefectureCheckUnit></PrefectureCheckUnit>
+      <PrefectureCheckUnit
+        onClickChekbox={onClickChekbox}
+      ></PrefectureCheckUnit>
     </div>
   );
 };

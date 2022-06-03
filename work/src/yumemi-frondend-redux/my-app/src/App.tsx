@@ -6,6 +6,9 @@ import Contents from "./features/contents/Contents";
 import "./App.css";
 
 function App() {
+  const onClickChekbox = () => {
+    alert("あああ");
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -54,7 +57,7 @@ function App() {
         </span>
       </header>
       <Header></Header>
-      <Contents></Contents>
+      <Contents onClickChekbox={onClickChekbox}></Contents>
     </div>
   );
 }
